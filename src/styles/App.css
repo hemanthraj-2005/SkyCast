@@ -47,7 +47,7 @@ button {
   color: #f8f8f8;
   background:
     linear-gradient(150deg, rgba(9, 9, 11, 0.96), rgba(38, 38, 42, 0.88)),
-    url("./assets/hero.png") right 24px bottom 18px / 210px auto no-repeat;
+    url("../assets/hero.png") right 24px bottom 18px / 210px auto no-repeat;
 }
 
 .brand-lockup {
@@ -439,7 +439,7 @@ button {
     justify-content: flex-start;
     background:
       linear-gradient(150deg, rgba(9, 9, 11, 0.96), rgba(38, 38, 42, 0.88)),
-      url("./assets/hero.png") right 14px bottom 10px / 170px auto no-repeat;
+      url("../assets/hero.png") right 14px bottom 10px / 170px auto no-repeat;
   }
 }
 
