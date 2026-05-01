@@ -4,7 +4,7 @@
 
 SkyCast is a responsive weather web app built with React and Vite. It lets users search for weather by city name or detect weather using their real-time location. The app displays current weather, important comfort metrics, a three-day forecast, recent searches, and Celsius/Fahrenheit switching.
 
-Live app: https://sky-cast-rho-one.vercel.app
+Live app: https://skycast-daily.vercel.app
 
 ## One-Minute Explanation
 

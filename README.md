@@ -16,4 +16,4 @@ SkyCast is a modern weather web app that helps users check live weather conditio
 
 ## Live App
 
-[SkyCast](https://sky-cast-rho-one.vercel.app)
+[SkyCast](https://skycast-daily.vercel.app)
