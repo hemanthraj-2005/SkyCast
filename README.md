@@ -1,52 +1,19 @@
 # SkyCast
 
-SkyCast is a React + Vite weather dashboard that shows live weather, a three-day forecast, unit switching, recent searches, and weather from the user's current location.
+SkyCast is a modern weather web app that helps users check live weather conditions for any city or their current location. It presents the forecast in a clean dark interface with quick, readable weather details.
 
-## Local Setup
+## Features
 
-Install dependencies:
+- Search weather by city name
+- Detect weather using the user's real-time location
+- View current temperature and weather condition
+- See feels-like temperature, humidity, wind speed, UV index, pressure, and visibility
+- Switch between Celsius and Fahrenheit
+- View a three-day weather forecast
+- Save and reuse recent city searches
+- Responsive design for desktop and mobile screens
+- Dark gray and white theme with colorful weather icons
 
-```bash
-npm install
-```
+## Live App
 
-Create a local `.env` file:
-
-```bash
-cp .env.example .env
-```
-
-Add your WeatherAPI key:
-
-```env
-VITE_WEATHER_API_KEY=your_weatherapi_key_here
-```
-
-Run the app:
-
-```bash
-npm run dev
-```
-
-## Deploy On Vercel
-
-Add this environment variable in the Vercel project settings:
-
-```env
-VITE_WEATHER_API_KEY=your_weatherapi_key_here
-```
-
-Use these build settings:
-
-```text
-Framework Preset: Vite
-Install Command: npm install
-Build Command: npm run build
-Output Directory: dist
-```
-
-After adding or changing the environment variable, redeploy the project. Vercel must rebuild the app before the key is available in production.
-
-## Notes
-
-The current-location feature uses the browser Geolocation API, so it works on secure origins such as `https://` Vercel deployments and `localhost`.
+[SkyCast](https://sky-cast-rho-one.vercel.app)
