@@ -1,16 +1,52 @@
-# React + Vite
+# SkyCast
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+SkyCast is a React + Vite weather dashboard that shows live weather, a three-day forecast, unit switching, recent searches, and weather from the user's current location.
 
-Currently, two official plugins are available:
+## Local Setup
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Install dependencies:
 
-## React Compiler
+```bash
+npm install
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Create a local `.env` file:
 
-## Expanding the ESLint configuration
+```bash
+cp .env.example .env
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Add your WeatherAPI key:
+
+```env
+VITE_WEATHER_API_KEY=your_weatherapi_key_here
+```
+
+Run the app:
+
+```bash
+npm run dev
+```
+
+## Deploy On Vercel
+
+Add this environment variable in the Vercel project settings:
+
+```env
+VITE_WEATHER_API_KEY=your_weatherapi_key_here
+```
+
+Use these build settings:
+
+```text
+Framework Preset: Vite
+Install Command: npm install
+Build Command: npm run build
+Output Directory: dist
+```
+
+After adding or changing the environment variable, redeploy the project. Vercel must rebuild the app before the key is available in production.
+
+## Notes
+
+The current-location feature uses the browser Geolocation API, so it works on secure origins such as `https://` Vercel deployments and `localhost`.
