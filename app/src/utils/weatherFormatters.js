@@ -1,3 +1,5 @@
+import { getCorrectedRegion } from "./locationCorrections.js";
+
 export function formatDate(dateString) {
   return new Intl.DateTimeFormat("en", {
     weekday: "short",
@@ -12,7 +14,7 @@ export function getIconUrl(icon) {
 export function getLocationTitle(weather) {
   if (!weather) return "Search a city";
 
-  return [weather.location.name, weather.location.region || weather.location.country]
+  return [weather.location.name, getCorrectedRegion(weather.location)]
     .filter(Boolean)
     .join(", ");
 }
