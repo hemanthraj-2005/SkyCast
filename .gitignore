@@ -24,3 +24,7 @@ dist-ssr
 *.sw?
 .env
 .vercel
+
+# Local interview prep documents
+INTERVIEW_GUIDE.md
+SkyCast_Interview_Guide.pdf
